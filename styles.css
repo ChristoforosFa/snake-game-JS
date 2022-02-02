@@ -1,0 +1,32 @@
+:root{
+  --number-of-squares-in-game: 21;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #000;
+}
+
+#game-board {
+  background-color: rgb(169, 221, 221);
+  width: 100vmin;
+  height: 100vmin;
+  display: grid;
+  grid-template-columns: repeat(var(--number-of-squares-in-game), 1fr);
+  grid-template-rows: repeat(var(--number-of-squares-in-game), 1fr);
+}
+
+.snake{
+  background-color: green;
+  border: .25vmin solid #000;
+}
+
+.food{
+  background-color: yellow;
+  border: .25vmin solid #000;
+}
